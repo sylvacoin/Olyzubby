@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Make Reservations | OlyZubbys Kitchen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="assets/css/animsition.min.css" >
+	<link rel="stylesheet" href="assets/css/toastr.css" >
+    <link rel="stylesheet" href="assets/css/custom.css" >
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" >
+  <style>
+  
+    
+  </style>
+  </head>
+  <body>
+    <div class="animsition">
+        <div class="navbar-wrapper">
+          <div class="container">
+
+            <nav class="navbar navbar-default navbar-fixed-top" style="height: 70px; line-height: 100px; background-color: rgba(0,0,0,1); margin:0;">
+              <div class="zu-nav">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#" style="height:70px; margin-top: 20px;">
+                    <img src="assets/img/OlyzubbysWordmark.png" alt="Olyzubbys Kitchen" class="brand-logo"  /></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right" style="margin-top: 15px">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="animsition-link" data-animsition-out="fade-out-right" data-animsition-in="fade-in">Home</a></li>
+                    <li><a href="make-reservations.html" data-animsition-out="fade-out-right">Make Reservation</a></li>
+                    <li><a href="order-take-out.html" data-animsition-out="fade-out-right">Order Take Out</a></li>
+                    <li><a href="other-services.html" data-animsition-out="fade-out-right" > Other Services</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+      <div class="container" id="contact" style="margin-top: 100px;">
+        <div class="row pad-s20 zu-row" id="reservation">
+          <h2>MAKE A RESERVATION</h2>
+          <p>
+            Stay Ahead Of The Time. Book A Space now
+          </p>
+        </div>
+        <div class="row zu-row">
+          <div class="col-sm-6">
+            <form action="process.php?action=reservations" class="form-horizontal" id="form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name*"/>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email*"/>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Message*" rows="4"></textarea>
+              </div>
+        <div class="form-group">
+                <input type="number" class="form-control" name="guests" placeholder="Number of Guest*" min="1"="100"/>
+              </div>
+              
+        <div class="form-group">
+        <div class="input-group date form_date" data-date="" data-date-format="yy-mm-dd">
+          <input class="form-control" type="text" value="" name="date" readonly placeholder="Date*">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+        </div>
+       </div> 
+       
+       <div class="form-group">
+        <div class="input-group date form_time" data-date="" data-date-format="hh:ii">
+          <input class="form-control" type="text" name="time" value="" readonly placeholder="Time*">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+        </div>
+       </div> 
+       
+        <div class="form-group">
+                <input type="submit" name="btnSubmit" value="SUBMIT" class="btn btn-default" />
+              </div>
+            </form>
+          </div>
+        </div>
+		
+		<div class="row zu-row">
+		  <h5 class="text-bold">Drop A Line Or Visit Us</h5>
+		  <p>tel -(678) 793 5565 </p>
+			<p>email - olyzubbyskitchen2011@gmail.com</p>
+			<p>4313 Old National Hwy College Park, GA 30337</p>
+			
+		</div>
+        
+        		<div class="row zu-socials text-center">
+          <a href="https://www.facebook.com/Olyzubbys-Kitchena-Taste-of-Africa-255095461171342/">
+		  <img src="assets/img/fb.png" alt="facebook" width="80px" height="80px"/>
+          </a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g34856-d4569772-Reviews-Olyzubbys_Kitchen-College_Park_Georgia.html">
+          <img src="assets/img/tripadviser.png" alt="trip advisors" width="80px" height="80px"/>
+          </a>
+        </div>
+      
+
+        <div class="row text-center zu-divider">
+            <div class="zu-tborder zu-tborder-lg"></div>
+            <div class="zu-tborder zu-tborder-md"></div>
+            <div class="zu-tborder zu-tborder-sm"></div>
+
+            <p class="footer-text">
+              Copyright &copy; olyzubby 2016 designed by <a href="http://www.dimconnect.com/">berryinc</a><br>
+			  powered by <a href="cinqhouse.com" alt="Cinqhouse">Cinqhouse</a>
+            </p>
+        </div>
+      </div>  
+  </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/toastr.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="assets/js/animsition.min.js"></script>
+    <script src="assets/js/script.js"></script>
+           
+
+  </body>
+</html>

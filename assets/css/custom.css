@@ -1,0 +1,531 @@
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url('../fonts/MAIAN.ttf');
+}
+
+@font-face {
+  font-family: 'ubuntu light Italic';
+  src: url('../fonts/ubuntu/Ubuntu-LI.ttf');
+}
+
+@font-face {
+  font-family: 'ubuntu condensed';
+  src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+@font-face {
+  font-family: 'Prototype';
+  src: url('../fonts/prototype/Prototype.ttf');
+}
+
+body {
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.25em; }
+h2, h1 { margin-bottom: 50px; }
+p { font-size: 1.2em; }
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a {
+    font-size: 1.8rem;
+    word-spacing: 0em;
+    font-weight: 100;
+    transition: all .3s;
+    color: #ccc;
+}
+
+
+.nav > li > a {
+	padding: 10px 12px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav li a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #000;
+    font-size: 1em;
+}
+
+.navbar-collapse.in {
+	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.7);
+}
+
+a.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+  /** NAVBAR BRAND */
+.brand-logo {
+	margin: -15px -15px -15px 0;
+	padding: 0;
+}
+
+.navbar-toggle {
+    margin-top: 20px;
+    border: none;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all .2s;
+}
+
+.navbar-toggle .top-bar{
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar{
+  opacity: 0;
+}
+
+.navbar-toggle .bottom-bar{
+  transform: rotate(-45deg);
+  -mos-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  transform-origin: 10% 90%;
+  -mos-transform-origin: 10% 90%;
+  -webkit-transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar{ transform: rotate(0); } 
+.navbar-toggle.collapsed .middle-bar{ opacity: 1 ; } 
+.navbar-toggle.collapsed .bottom-bar{ transform: rotate(0); } 
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+  margin-bottom: 50px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+.carousel-caption{
+  padding-top: 0px;
+  top: 25%;
+}
+.carousel-caption h1 {
+  font-family: 'prototype', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+
+.carousel-caption h4 {
+  font-family: 'ubuntu light Italic', tahoma;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  font-family: 'ubuntu condensed', tahoma;
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2em;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 320){
+  .carousel-caption{
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* CUSTOMIZE CONTAINERS 
+--------------------------------------------------------*/
+.zu-nav {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.zu-row {
+  padding: 0 0 50px; 
+  line-height: 1.5;
+}
+
+/* CUSTOMIZE ZUBBY WORK HOURS 
+--------------------------------------------------------*/
+/* zu-divider */
+
+.zu-notice h1, .zu-notice h2 {
+  margin-bottom: 25px;
+}
+
+.zu-divider .zu-tborder {
+  height: 2px;
+  background: #999 none repeat scroll 0% 0%;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 320px){
+	h1 { font-size: 2em;}
+	h2 { font-size: 1.75em;}
+	h3 { font-size: 1.5em;}
+	h4 { font-size: 1.4em; }
+	h5 { font-size: 1.3em; }
+	h6 { font-size: 1.2em; }
+	.zu-nav { width: 100%; }
+}
+
+@media (max-width: 800px){
+	h1 { font-size: 2em;}
+	h2 { font-size: 1.75em;}
+	h3 { font-size: 1.5em;}
+	h4 { font-size: 1.4em; }
+	h5 { font-size: 1.3em; }
+	h6 { font-size: 1.2em; }
+	.zu-nav { width: 95%; }
+}
+
+.zu-divider .zu-tborder-sm {
+  width: 25%;
+}
+
+.zu-divider .zu-tborder-md {
+  width: 40%;
+}
+
+.zu-divider .zu-tborder-lg {
+  width: 55%;
+}
+
+
+/* CUSTOMIZE ZU-MENU (MENU)
+----------------------------------------------*/
+
+.zu-menu {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 50px;
+}
+
+.zu-menu p {
+	font-size: 1.3em;
+}
+
+.zu-menu-card {
+  float: left;
+  margin: 0 -2px;
+  width: 33.5%;
+}
+
+.zu-menu-card figure {
+  position: relative;
+  margin: 0;
+  padding-top: 45%;
+  height: 350px;
+  overflow: hidden;
+}
+.zu-menu-card figure::before {
+  content: '';
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 100%;
+}
+
+.zu-menu-card img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 105%;
+  min-height: 100%;
+  transition: all .25s ease-out;
+}
+
+.zu-menu-card figcaption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  font: 2rem 'IndieFlower';
+  color: #fff;
+}
+
+a.zu-menu-card:hover figure::before {
+  display: block;
+}
+
+.zu-menu-card:hover img {
+  top: -10%;
+  left: -10%;
+  width: 120%;
+}
+
+.zu-menu-card:hover figcaption {
+  display: block;
+}
+
+
+@media (max-width: 320px){
+  .zu-menu-card {
+    height: 350px;
+  }
+  
+  .zu-menu-card figure {
+    height: 350px !important;
+  }
+  
+  .zu-menu p{
+	font-size: 1em;
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.3);
+  }
+  
+  .zu-menu-card figcaption {
+	  display: block !important;
+  }
+  
+  a.zu-menu-card figure::before {
+  display: block !important; 
+	}
+
+}
+
+/* who we are */
+
+.zu-secondary {
+  background: url('../img/aboutus.jpg') no-repeat;
+  background-size: 120% 120%;
+  background-attachment: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 50px ;
+  color: #fff;
+  min-height: 500px;
+}
+
+.zu-secondary p {
+  margin-bottom: 5px;
+  line-height: 2;
+}
+
+.zu-secondary h4 {
+  margin-top: 50px;
+  font-family: 'IndieFlower';
+}
+
+#map {
+  width: 100%;
+  height: 350px;
+}
+
+@media ( max-width:  990px ){
+  .zu-nav {
+    width: 98%;
+  }
+	
+  .zu-menu-card {
+    float: left;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .zu-menu-card figure {
+    height: 350px;
+  }
+  .navbar-header {
+      float: none;
+      height: 70px;
+  }
+  
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  
+  .navbar-toggle {
+      display: block;
+  }
+  
+  .navbar-collapse {
+	  margin-top: 10px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      border:0px;
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  
+  .navbar-collapse.collapse {
+      display: none !important;
+  } 
+  .navbar-nav {
+      float: none! important;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  
+  #navbar {
+	 margin-top:30px;
+  }
+}
+
+  
+/* CONTACT US
+-------------------------------------------------------------*/
+.mar-bot25 { margin-bottom: 25px; }
+.mar-bot50 { margin-bottom: 50px; }
+.text-bold { font-weight: 800; }
+.h4 { font-size: 2em; font-family: 'indieFlower', sans-serif; }
+
+/* MENU SPECIALS
+--------------------------------------------------------------*/
+table.specials {
+	width: 80%;
+	margin: 25px auto;
+}
+
+table.specials p {
+	font-size: 1em;
+}
+
+table.specials tr{
+	margin: 10px auto;
+	padding: 15px 10px;
+}
+
+ol.no-bullets {
+	list-style: none;
+	margin: 0px 0px 5px -20px;
+}
+
+table.specials ol li {
+	margin: 0px 0px 5px -20px;
+}
+
+table.specials tr td:last-child {
+	padding-top: 18px;
+}
+
+.row-80 {
+	margin: 0px auto;
+	width: 80%;
+}
+/* FORMS
+------------------------------------------------------------*/
+.form-control, .btn , .input-group .form-control{
+	border-radius: 1.5px;
+	background: #ccc;
+	transition:all 1.5s;
+}
+
+.form-control:focus {
+	background: #fff;
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+/* FOOTER
+-------------------------------------------------------------*/
+.zu-socials a {
+  text-decoration: none;
+  color: #999;
+  font-size: 1rem;
+}
+
+.footer-text{ font-size: .9em; }
+.pad-s20 { padding: 20px; }
+
